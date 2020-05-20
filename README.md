@@ -1,11 +1,5 @@
 # FloatMenuSample
 
-[ ![Download](https://api.bintray.com/packages/fanofdemo/maven/FloatMenu/images/download.svg) ]
-
-[crosg/FloatMenuSample](https://github.com/crosg/FloatMenuSample)
-transfer from [yiming/FloatMenuSample](https://github.com/fanOfDemo/FloatMenuSample)
-
-
  
 ## GIF
 <img src="picture/floatmenu2.gif" width="320" />
@@ -13,7 +7,7 @@ transfer from [yiming/FloatMenuSample](https://github.com/fanOfDemo/FloatMenuSam
 
 ##  GRADLE:
 
-	compile 'com.yw.game.floatmenu:FloatMenu:2.0.1'
+	compile 'com.github.keepgoodfeeling:FloatMenuSample:1.0.0'
 
 
 android float menu in app 
