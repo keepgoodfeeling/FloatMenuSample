@@ -653,6 +653,21 @@ public class FloatLogoMenu {
         }
 
     }
+    
+    /**
+    *记录上次的位置logo的停放位置，以备下次恢复
+    */
+    public void refreshMenuPositionToLocal(){
+        saveSetting(LOCATION_X, mHintLocation);
+        saveSetting(LOCATION_Y, wmParams.y);
+    }
+    
+    /**
+     * 关闭菜单列表，只显示logo图标
+     */
+    public void hideItemList(){
+        openMenu();
+    }
 
 
     /**
@@ -741,6 +756,7 @@ public class FloatLogoMenu {
                     isDrag = true;
                 }
                 wManager.updateViewLayout(mFloatLogo, wmParams);
+                refreshMenuPositionToLocal();
             }
         } catch (Exception e) {
             e.printStackTrace();
